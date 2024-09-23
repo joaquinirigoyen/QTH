@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "titulo": "Edificación con Paneles EcoForte",
+    "descripcion": "Este proyecto utilizó paneles EcoForte, un material innovador que reduce el impacto ambiental y proporciona un excelente aislamiento térmico y acústico.",
+    "imagen": "/src/assets/img/ecoforte.jpg",
+    "imagenes": [
+      "/src/assets/img/ecoforte1.jpg",
+      "/src/assets/img/ecoforte2.jpg",
+      "/src/assets/img/ecoforte1.jpg"
+    ],
+    "detalles": "Este proyecto destaca por el uso de paneles EcoForte, un material revolucionario que no solo reduce significativamente el impacto ambiental, sino que también ofrece un aislamiento térmico y acústico excepcional. La elección de EcoForte para esta edificación responde a nuestra misión de promover prácticas constructivas sostenibles y responsables con el medio ambiente.",
+    "link": "projects-details.html?id=1",
+    "dimension": "100 m2",
+    "materials": "Paneles de ecoforte",
+    "time": "3 meses",
+    "sustainable": "sustentable"
+  },
+
+  {
+    "id": 2,
+    "titulo": "Edificación en escuela secundaria",
+    "descripcion": "Este proyecto se centró en la construcción de una nueva ala para una escuela secundaria, utilizando técnicas sostenibles.",
+    "imagen": "/src/assets/img/ecoforte1.jpg",
+    "imagenes": [
+      "/src/assets/img/ecoforte1.jpg",
+      "/src/assets/img/ecoforte2.jpg",
+      "/src/assets/img/platea.jpg"
+    ],
+    "detalles": "Detalles extensos sobre la edificación en la escuela secundaria. Información adicional sobre desafíos, soluciones empleadas, impacto social, etc.",
+    "link": "projects-details.html?id=2",
+    "dimension": "100 m2",
+    "materials": "Paneles de ecoforte",
+    "time": "3 meses",
+    "sustainable": "sustentable"
+  },
+  {
+    "id": 3,
+    "titulo": "Otro proyecto",
+    "descripcion": "Este proyecto se centró en la construcción de una nueva ala para una escuela secundaria, utilizando técnicas sostenibles.",
+    "imagen": "/src/assets/img/ecoforte2.jpg",
+    "imagenes": [
+      "/src/assets/img/ecoforte1.jpg",
+      "/src/assets/img/ecoforte2.jpg",
+      "/src/assets/img/platea.jpg"
+    ],
+    "detalles": "Detalles extensos sobre la edificación en la escuela secundaria. Información adicional sobre desafíos, soluciones empleadas, impacto social, etc.",
+    "link": "projects-details.html?id=3",
+    "dimension": "100 m2",
+    "materials": "Paneles de ecoforte",
+    "time": "3 meses",
+    "sustainable": "sustentable"
+  }
+]

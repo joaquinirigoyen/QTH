@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "titulo": "Obras humedas",
+    "descripcion": "Realizamos obras húmedas con precisión y calidad, abarcando desde cimientos hasta acabados finales, para garantizar estructuras sólidas y duraderas.",
+    "imagen": "/src/assets/img/servicios/albañileria.jpg",
+    "categoria": "construccion"
+  },
+  {
+    "id": 2,
+    "titulo": "Construccion en seeco",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/durlock.jpg",
+    "categoria": "construccion"
+  },
+  {
+    "id": 3,
+    "titulo": "Mantenimiento",
+    "descripcion": "  Garantizamos el óptimo funcionamiento de edificios y bases operativas con un mantenimiento integral y adaptado a cada necesidad.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "construccion"
+  },
+  {
+    "id": 4,
+    "titulo": "Construccion en seco",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "construccion"
+  },
+  {
+    "id": 5,
+    "titulo": "Estructuras",
+    "descripcion": "Realizamos obras húmedas con precisión y calidad, abarcando desde cimientos hasta acabados finales, para garantizar estructuras sólidas y duraderas.",
+    "imagen": "/src/assets/img/servicios/albañileria.jpg",
+    "categoria": "soldadura"
+  },
+  {
+    "id": 6,
+    "titulo": "piping",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "soldadura"
+  },
+  {
+    "id": 6,
+    "titulo": "piping",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "soldadura"
+  },
+  {
+    "id": 6,
+    "titulo": "piping",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "soldadura"
+  },
+  {
+    "id": 6,
+    "titulo": "piping",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "instalaciones"
+  },
+  {
+    "id": 6,
+    "titulo": "piping",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "instalaciones"
+  },
+  {
+    "id": 6,
+    "titulo": "piping",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "instalaciones"
+  },
+  {
+    "id": 6,
+    "titulo": "piping",
+    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
+    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "categoria": "instalaciones"
+  }
+]
