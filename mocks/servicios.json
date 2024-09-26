@@ -8,7 +8,7 @@
   },
   {
     "id": 2,
-    "titulo": "Construccion en seeco",
+    "titulo": "Construccion en seco",
     "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
     "imagen": "/src/assets/img/servicios/durlock.jpg",
     "categoria": "construccion"
@@ -22,65 +22,65 @@
   },
   {
     "id": 4,
-    "titulo": "Construccion en seco",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "titulo": "Plateas",
+    "descripcion": " Construimos plateas de hormigón de alta calidad, diseñadas para brindar estabilidad y seguridad en cualquier construcción.",
+    "imagen": "/src/assets/img/servicios/platea.jpg",
     "categoria": "construccion"
   },
   {
     "id": 5,
     "titulo": "Estructuras",
-    "descripcion": "Realizamos obras húmedas con precisión y calidad, abarcando desde cimientos hasta acabados finales, para garantizar estructuras sólidas y duraderas.",
-    "imagen": "/src/assets/img/servicios/albañileria.jpg",
+    "descripcion": "Diseñamos y construimos estructuras de hierro resistentes, adaptadas a los requerimientos de cada proyecto, garantizando estabilidad y seguridad.",
+    "imagen": "/src/assets/img/servicios/estructura.jpg",
     "categoria": "soldadura"
   },
   {
     "id": 6,
-    "titulo": "piping",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "titulo": "Cercos perimetrales",
+    "descripcion": " Instalamos cercos perimetrales robustos y duraderos, ideales para proteger todo tipo de propiedades y terrenos.",
+    "imagen": "/src/assets/img/servicios/cercos.jpg",
     "categoria": "soldadura"
   },
   {
-    "id": 6,
-    "titulo": "piping",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "id": 7,
+    "titulo": "Piping",
+    "descripcion": " Proveemos sistemas de cañerías de alta calidad, asegurando una conducción eficiente y segura de fluidos para proyectos industriales y comerciales.",
+    "imagen": "/src/assets/img/servicios/piping.jpg",
     "categoria": "soldadura"
   },
   {
-    "id": 6,
-    "titulo": "piping",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "id": 8,
+    "titulo": "Prefabricados en taller",
+    "descripcion": "Fabricamos elementos prefabricados con precisión, listos para ser instalados rápidamente en obra, optimizando tiempos y costos.",
+    "imagen": "/src/assets/img/servicios/prefabricados.jpg",
     "categoria": "soldadura"
   },
   {
-    "id": 6,
-    "titulo": "piping",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "id": 9,
+    "titulo": "Agua",
+    "descripcion": " Realizamos instalaciones de agua eficientes y seguras, asegurando un suministro constante y confiable para todo tipo de proyectos.",
+    "imagen": "/src/assets/img/servicios/agua.jpg",
     "categoria": "instalaciones"
   },
   {
-    "id": 6,
-    "titulo": "piping",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "id": 10,
+    "titulo": "Gas",
+    "descripcion": " Instalaciones de gas certificadas que cumplen con los más altos estándares de seguridad y eficiencia.",
+    "imagen": "/src/assets/img/servicios/gas.jpg",
     "categoria": "instalaciones"
   },
   {
-    "id": 6,
-    "titulo": "piping",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "id": 11,
+    "titulo": "Cloacas",
+    "descripcion": " Sistemas de cloacas bien diseñados y ejecutados para garantizar el manejo adecuado de aguas residuales.",
+    "imagen": "/src/assets/img/servicios/cloaca.jpg",
     "categoria": "instalaciones"
   },
   {
-    "id": 6,
-    "titulo": "piping",
-    "descripcion": " Soluciones rápidas utilizando técnicas de construcción en seco. Nuestros métodos garantizan acabados limpios y de alta calidad, adaptados a tus necesidades.",
-    "imagen": "/src/assets/img/servicios/mantenimiento.jpg",
+    "id": 12,
+    "titulo": "Electricidad",
+    "descripcion": " Instalaciones eléctricas completas, diseñadas para satisfacer las necesidades de energía de manera segura y eficiente.",
+    "imagen": "/src/assets/img/servicios/electricidad.jpg",
     "categoria": "instalaciones"
   }
 ]
