@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuLinks = mobileMenu.querySelectorAll("a");
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Agregar la funcionalidad para cerrar el menú cuando se selecciona una sección
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const projectId = urlParams.get("id");

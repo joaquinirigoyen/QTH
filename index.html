@@ -73,56 +73,53 @@
     <!-- Servicios Section --------------------------------------------------------->
     <!-- <div class="bg-gradient-to-b from-gray-100  via-gray-200 to-gray-400"> -->
     <!-- Servicios section data-aos="fade-down" data-aos-duration="1500" -->
-    <section id="servicios" class="py-16 text-slate-800 bg-gray-200">
+    <section id="servicios" class="py-16 text-slate-800 bg-gray-200" >
       <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Nuestros Servicios</h2>
-      <p class="text-center text-base mb-8">Ofrecemos soluciones integrales para garantizar la calidad y durabilidad de tus proyectos.</p>
-      <div class="space-y-6">
+        <h2 class="text-4xl font-bold mb-4"data-aos="fade-down">Nuestros Servicios</h2>
+        <p class="text-center text-lg mb-4"data-aos="fade-down">Ofrecemos soluciones integrales para garantizar la calidad y durabilidad de tus proyectos.</p>
+        <div class="space-y-6">
         <!-- Categoría Construcción -->
-        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('construccion')">
+        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('construccion')" data-aos="flip-up" >
           <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/construccion.jpg');"></div>
           <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <h2 class="text-xl md:text-2xl font-bold text-white">Construcción</h2>
           </div>
         </div>
-        <div id="construccion" class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        <div id="construccion" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
       
         <!-- Categoría Soldadura -->
-        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('soldadura')">
+        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('soldadura')"data-aos="flip-up">
           <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/soldadura.jpg');"></div>
           <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <h2 class="text-xl md:text-2xl font-bold text-white">Soldadura</h2>
             
           </div>
         </div>
-        <div id="soldadura" class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        <div id="soldadura" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
       
         <!-- Categoría Instalaciones -->
-        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('instalaciones')">
+        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('instalaciones')"data-aos="flip-up">
           <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/instalaciones2.jpg');"></div>
           <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <h2 class="text-xl md:text-2xl font-bold text-white">Instalaciones</h2>
           </div>
         </div>
-        <div id="instalaciones" class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        <div id="instalaciones" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
       </div>
-      
-      
     </div>
-      
     </section>
     
     
     <!-- Sección de Proyectos ------------------------------------------------------->
     <section id="proyectos" class="py-16 bg-slate-800 text-gray-100">
       <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Nuestros Proyectos</h2>
-        <p class="text-lg mb-2">
+        <h2 class="text-4xl font-bold mb-6"data-aos="zoom-in-down" data-aos-duration="700">Nuestros Proyectos</h2>
+        <p class="text-lg mb-2"data-aos="zoom-in-down" data-aos-duration="800">
           Descubre algunos de los proyectos que hemos llevado a cabo con éxito.
         </p>
         <main class="container mx-auto p-4 rounded-lg bg-slate-800 mb-5">
           <!-- Slider principal de Proyectos -->
-          <div id="proyectos-slider" class="swiper swiper-container proyectos-swiper mb-5">
+          <div id="proyectos-slider" class="swiper swiper-container proyectos-swiper mb-5" >
             <div class="swiper-wrapper" id="swiper-wrapper">
             <!-- Las tarjetas de proyectos se cargarán dinámicamente aquí -->
             </div>
@@ -138,74 +135,69 @@
     </section>
 
     <!-- nosotros section ----------------------------------------------------------->
-    <section id="nosotros" class="py-16 bg-gray-100">
+    <section id="nosotros" class="py-16 bg-gray-200 min-h-screen">
       <!-- Contenido -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container mx-auto text-center p-2">
         <!-- Título -->
-        <h2 class="text-4xl font-extrabold text-center text-slate-800 mb-8">
+        <h2 class="text-4xl font-extrabold text-slate-800 mb-4" data-aos="flip-down">
           ¿Quiénes somos?
         </h2>
-
         <!-- Descripción breve -->
-        <p class="text-center text-gray-600 mb-12">
-          En nuestra empresa, nos dedicamos a ofrecer soluciones integrales en el ámbito de la construcción, combinando innovación, experiencia y un fuerte compromiso con la calidad. Nuestro equipo está formado por profesionales altamente capacitados que trabajan con dedicación para superar las expectativas de nuestros clientes. Desde la planificación hasta la ejecución, cada proyecto es una oportunidad para demostrar nuestra pasión por el trabajo bien hecho. Descubre cómo nuestra misión, visión y valores 
-          impulsan nuestro éxito y nos diferencian en el mercado.
+        <p class=" text-gray-600 mb-4" data-aos="flip-down">
+          En <strong>QTH.SRL</strong>, nos dedicamos a desarrollar proyectos de alta envergadura con un enfoque en calidad, innovación y sostenibilidad. Contamos con un equipo de profesionales experimentados que lideran cada obra desde la planificación hasta su ejecución, garantizando resultados que superan las expectativas de nuestros clientes. Nuestro compromiso es construir no solo infraestructuras, sino también relaciones de confianza y éxito duradero.
         </p>
-        
-        <!-- Contenedor de las cards -->
-        <div class="flex flex-wrap justify-center">
-          <!-- Card Misión -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 m-2 flex flex-col items-center text-center">
-          <!-- Icono SVG -->
-          <div class="mb-4 text-yellow-500">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
-            </svg>
-          </div>
-          <!-- Contenido de la tarjeta -->
-          <h3 class="text-xl font-semibold text-gray-800 mb-4">Nuestra Misión</h3>
-          <p class="text-gray-600">
-            Proporcionar soluciones innovadoras y de alta calidad en el ámbito de la construcción, superando las expectativas de nuestros clientes a través de la excelencia y el compromiso.
-          </p>
-        </div>
 
+        <!-- Contenedor de las cards -->
+        <div class="flex flex-wrap justify-center gap-8">
+          <!-- Card Misión -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="1000">
+            <!-- Icono SVG -->
+            <div class="mb-2 text-yellow-500">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12" aria-label="icono mision de la empresa">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+              </svg>
+            </div>
+            <!-- Contenido de la tarjeta -->
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Nuestra Misión</h3>
+            <p class="text-gray-600 mb-2 leading-relaxed">
+              Ofrecemos soluciones innovadoras y de alta calidad en la construcción, superando las expectativas de nuestros clientes con excelencia y compromiso en cada proyecto.    </p>
+          </div>
 
           <!-- Card Visión -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 m-2 flex flex-col items-center text-center">
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="1500">
             <!-- Icono SVG -->
-            <div class="mb-4 text-yellow-500">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+            <div class="mb-2 text-yellow-500">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono vision de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
               </svg>
             </div>
             <!-- Contenido de la tarjeta -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">Nuestra Visión</h3>
-              <p class="text-gray-600 mb-4">
-                Ser líderes en el sector de la construcción, reconocidos por nuestra capacidad de innovación y la calidad en la ejecución de proyectos, con un enfoque en el desarrollo sostenible y la satisfacción del cliente.
-              </p>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Nuestra Visión</h3>
+              <p class="text-gray-600 mb-2 leading-relaxed">
+                Ser referentes en la construcción, reconocidos por nuestra capacidad de innovar y la calidad en la ejecución, con un enfoque en la sostenibilidad y la satisfacción del cliente.</p>
             </div>
           </div>
 
           <!-- Card Valores -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 m-2 flex flex-col items-center text-center">
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="2000">
             <!-- Icono SVG -->
-            <div class="mb-4 text-yellow-500">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+            <div class="mb-2 text-yellow-500">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono valores de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
               </svg>
             </div>
             <!-- Contenido de la tarjeta -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-4">Nuestros Valores</h3>
-              <p class="text-gray-600 mb-4">
-                Compromiso, integridad, innovación y excelencia son los pilares que guían nuestra empresa y nos impulsan a ofrecer lo mejor en cada proyecto.
-              </p>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Nuestros Valores</h3>
+              <p class="text-gray-600 mb-2 leading-relaxed">
+                Nuestros pilares son el compromiso, la integridad, la innovación y la excelencia, impulsándonos a ofrecer lo mejor en cada proyecto.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- contacto section ----------------------------------------------------------->
     <section id="contacto" class=" py-16 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-500">
@@ -213,7 +205,7 @@
         <!-- Flexbox para dividir en dos columnas -->
         <div class="flex flex-col md:flex-row md:justify-between gap-12">
           <!-- Columna Izquierda: Mapa y Detalles de Contacto -->
-          <div class="w-full md:w-1/2 space-y-4">
+          <div class="w-full md:w-1/2 space-y-4"data-aos="zoom-in-down" data-aos-duration="800">
             <!-- Mapa de Ubicación -->
             <div class="w-full h-48 bg-white shadow rounded-lg overflow-hidden">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3102.4696838402433!2d-68.122178!3d-38.958942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333da0464863%3A0xf8fe5df913bc6cec!2sCaspichango%20326%2C%20Q8300JLC%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1726549071674!5m2!1ses!2sar" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
@@ -298,7 +290,7 @@
             </div>
           </div>
           <!-- Columna Derecha: Formulario de Contacto -->
-          <div class="w-full md:w-1/2 bg-white p-4 rounded-lg shadow">
+          <div class="w-full md:w-1/2 bg-white p-4 rounded-lg shadow"data-aos="zoom-in-down" data-aos-duration="800">
             <h1 class="text-2xl font-bold  text-slate-800 mb-2 text-center">Contáctanos</h1>
             <form action="https://formsubmit.co/joa.irigoyen@gmail.com" method="POST" id="contactForm" class="space-y-3" novalidate>
               <div>

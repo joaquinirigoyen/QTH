@@ -77,10 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
         categoriaContainer.innerHTML = serviciosFiltrados
           .map(
             (servicio) => `
-            <div class="bg-slate-800 rounded-lg p-4 text-center flex flex-col items-center shadow-lg transition-shadow duration-300 hover:shadow-2xl w-10/12 mx-auto">
+            <div class="bg-slate-800 rounded-lg p-4 text-center flex flex-col items-center shadow-lg transition-shadow duration-300 hover:shadow-2xl w-10/12 mx-auto" >
               <img src="${servicio.imagen}" alt="${servicio.titulo}" class="w-24 h-24 object-cover rounded-full mb-2">
-              <h3 class="text-white text-xl mb-1">${servicio.titulo}</h3>
-              <p class="text-white text-sm">${servicio.descripcion}</p>
+              <h3 class="text-white font-bold text-xl mb-2 ">${servicio.titulo}</h3>
+              <p class="text-white text-sm ">${servicio.descripcion}</p>
             </div>
           `
           )
@@ -89,12 +89,38 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error cargando los servicios:", error));
 });
+
 function toggleCategory(categoria) {
   const categoryDiv = document.getElementById(categoria);
+
+  // Primero, ocultar todas las demás categorías
+  const categorias = ["construccion", "soldadura", "instalaciones"];
+  categorias.forEach((c) => {
+    const div = document.getElementById(c);
+    if (c !== categoria && !div.classList.contains("hidden")) {
+      div.classList.remove("grid");
+      div.classList.add("hidden");
+    }
+  });
 
   if (categoryDiv.classList.contains("hidden")) {
     categoryDiv.classList.remove("hidden");
     categoryDiv.classList.add("grid");
+
+    // Obtener todas las tarjetas de la categoría
+    const cards = categoryDiv.children;
+
+    // Aplicar un retraso en la visualización de cada tarjeta
+    Array.from(cards).forEach((card, index) => {
+      card.classList.remove("opacity-100"); // Asegurarse de que estén ocultas al inicio
+      card.classList.add("opacity-0"); // Inicialmente ocultas
+
+      // Aplicar el efecto de fade-in con un retraso
+      setTimeout(() => {
+        card.classList.remove("opacity-0"); // Remover opacidad
+        card.classList.add("opacity-100"); // Agregar opacidad total
+      }, index * 300); // 200ms de retraso por tarjeta
+    });
   } else {
     categoryDiv.classList.remove("grid");
     categoryDiv.classList.add("hidden");
