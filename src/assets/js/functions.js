@@ -41,55 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   fetch("../../mocks/servicios.json")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       const serviciosContainer = document.getElementById("servicios-container");
-//       serviciosContainer.innerHTML = data
-//         .map(
-//           (servicio) => `
-//           <div class="bg-gray-200 rounded-lg p-4 text-center flex flex-col items-center shadow-lg transition-shadow duration-300 hover:shadow-2xl w-64 mx-auto">
-//             <img src="${servicio.imagen}" alt="${servicio.titulo}" class="w-24 h-24 object-cover rounded-full mb-2">
-//             <h3 class="text-slate-800 text-xl mb-1">${servicio.titulo}</h3>
-//             <p class="text-slate-800 text-sm">${servicio.descripcion}</p>
-//           </div>
-//         `
-//         )
-//         .join("");
-//     })
-//     .catch((error) => console.error("Error cargando los servicios:", error));
-// });
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("../../mocks/servicios.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const categorias = ["construccion", "soldadura", "instalaciones"];
-
-      categorias.forEach((categoria) => {
-        const categoriaContainer = document.getElementById(categoria);
-
-        // Generar tarjetas de servicios para cada categoría
-        const serviciosFiltrados = data.filter(
-          (servicio) => servicio.categoria === categoria
-        );
-
-        categoriaContainer.innerHTML = serviciosFiltrados
-          .map(
-            (servicio) => `
-            <div class="bg-slate-800 rounded-lg p-4 text-center flex flex-col items-center shadow-lg transition-shadow duration-300 hover:shadow-2xl w-10/12 mx-auto" >
-              <img src="${servicio.imagen}" alt="${servicio.titulo}" class="w-24 h-24 object-cover rounded-full mb-2">
-              <h3 class="text-white font-bold text-xl mb-2 ">${servicio.titulo}</h3>
-              <p class="text-white text-sm ">${servicio.descripcion}</p>
-            </div>
-          `
-          )
-          .join("");
-      });
-    })
-    .catch((error) => console.error("Error cargando los servicios:", error));
-});
-
+//SECCION DE SERVICIOS
 function toggleCategory(categoria) {
   const categoryDiv = document.getElementById(categoria);
 
@@ -127,6 +79,36 @@ function toggleCategory(categoria) {
   }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("../../mocks/servicios.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const categorias = ["construccion", "soldadura", "instalaciones"];
+
+      categorias.forEach((categoria) => {
+        const categoriaContainer = document.getElementById(categoria);
+
+        // Generar tarjetas de servicios para cada categoría
+        const serviciosFiltrados = data.filter(
+          (servicio) => servicio.categoria === categoria
+        );
+
+        categoriaContainer.innerHTML = serviciosFiltrados
+          .map(
+            (servicio) => `
+            <div  class="bg-slate-800 rounded-lg p-4 text-center flex flex-col items-center shadow-lg transition transform duration-300 hover:scale-105 mx-auto w-10/12" >
+              <img src="${servicio.imagen}" alt="${servicio.titulo}" class="w-24 h-24 object-cover rounded-full mb-2">
+              <h3 class="text-white font-bold text-xl mb-2 ">${servicio.titulo}</h3>
+              <p class="text-white text-sm leading-relaxed">${servicio.descripcion}</p>
+            </div>
+            `
+          )
+          .join("");
+      });
+    })
+    .catch((error) => console.error("Error cargando los servicios:", error));
+});
+
 // SECCION PROYECTOS
 document.addEventListener("DOMContentLoaded", function () {
   // Cargar datos desde el archivo JSON
@@ -139,12 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // Crear las tarjetas de proyectos dinámicamente
       data.forEach((project) => {
         const projectSlide = `
-        <div class="swiper-slide flex justify-center mt-0 md:mt-12 lg:mt-12 ">
+        <div class="swiper-slide flex justify-center mt-4">
           <div class="shadow-lg project-card bg-gradient-to-b from-white via-gray-200 to-gray-300 text-slate-800 rounded-lg p-6 w-full max-w-4xl mx-auto flex md:flex-row items-center md:space-x-6">
             <div class="w-full h-64 md:h-auto md:w-1/2">
               <img src="${project.imagen}" alt="${project.titulo}" class="w-full h-full object-cover rounded-lg">
             </div>
-            <div class="w-full md:w-1/2 flex flex-col justify-between ">
+            <div class="w-full md:w-1/2 flex flex-col justify-between">
               <div>
                 <h3 class="text-2xl md:text-3xl font-bold mb-4">${project.titulo}</h3>
                 <p class="text-sm md:text-lg mb-2">
@@ -181,6 +163,18 @@ function initSwiper() {
     pagination: {
       el: ".proyectos-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      // Esto asegura que siempre veas uno
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 1,
+      },
     },
   });
 }

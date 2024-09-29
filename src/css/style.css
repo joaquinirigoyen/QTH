@@ -5,46 +5,47 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* --- Estilos Generales --- */
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
 
+/* Botones de categoría (usados en otras partes del sitio) */
 .category-button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .category-button:hover {
   background-color: rgba(234, 179, 12, 0.1);
 }
 
+/* Links del navbar */
 .navbar-link {
-  position: relative; /* Necesario para el pseudo-elemento */
+  position: relative;
   display: inline-block;
-  padding-bottom: 4px; /* Espacio debajo del texto */
-  transition: color 0.3s ease; /* Transición suave del color del texto */
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
 }
-
 .navbar-link::after {
-  content: ""; /* Pseudo-elemento vacío para el subrayado */
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px; /* Grosor del subrayado */
-  background-color: #eab308; /* Color del subrayado */
-  transition: width 0.4s ease; /* Transición suave de la longitud */
+  height: 2px;
+  background-color: #eab308;
+  transition: width 0.4s ease;
 }
-
 .navbar-link:hover::after,
 .navbar-link.active::after {
-  width: 100%; /* Hace que el subrayado se extienda a lo largo del texto */
+  width: 100%;
 }
-
 .navbar-link.active {
-  color: #eab308; /* Cambia el color del texto si está activo */
+  color: #eab308;
 }
 
+/* --- Estilos Generales para los Sliders (Swiper) --- */
 .swiper-container {
   width: 100%;
   height: 400px;
@@ -64,18 +65,23 @@ html {
   object-fit: cover;
 }
 
+/* Botones generales de navegación */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #eab308;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgba(216, 211, 211, 0.5);
   padding: 30px 20px;
   border-radius: 5px;
 }
-
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #eab308;
+}
 .swiper-pagination-bullet-active {
   background-color: #eab308;
 }
 
+/* --- Estilos del Slider de Detalle del Proyecto --- */
 .swiper-thumbnails {
   display: flex;
   justify-content: center;
@@ -103,39 +109,53 @@ html {
   border-color: #eab308;
 }
 
+/* Responsividad para el Slider de Detalle del Proyecto */
 @media (max-width: 640px) {
   .swiper-container {
     height: 300px;
   }
-
   .swiper-thumbnail {
     width: 40px;
     height: 40px;
   }
 }
 
-/* Estilos solo para el slider de proyectos */
+/* --- Estilos Específicos para el Slider de Proyectos --- */
 #proyectos-slider .swiper-button-next,
 #proyectos-slider .swiper-button-prev {
-  color: #fbbf24; /* Cambia las flechas a amarillo */
-  background-color: rgba(141, 141, 141, 0.2); /* Fondo semitransparente */
+  color: white;
+  background-color: rgba(216, 211, 211, 0.5);
   padding: 30px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
+  top: 50%; /* Centrar verticalmente */
 }
 
+/* Hover de los botones de navegación del Slider de Proyectos */
 #proyectos-slider .swiper-button-next:hover,
 #proyectos-slider .swiper-button-prev:hover {
-  color: white;
+  color: #eab308;
 }
 
+/* Paginación activa en el Slider de Proyectos */
 #proyectos-slider .swiper-pagination-bullet-active {
-  background-color: #fbbf24; /* Cambiar color de la paginación activa a amarillo */
+  background-color: #eab308;
 }
 
 @media (max-width: 768px) {
+  /* Reducir tamaño de los botones en pantallas pequeñas */
   #proyectos-slider .swiper-button-next,
   #proyectos-slider .swiper-button-prev {
-    padding: 12px 8px; /* Reduce el tamaño del botón */
-    top: 45%; /* Ajusta la posición vertical */
+    top: 50%;
+  }
+}
+
+/* Estilo para las tarjetas de los proyectos */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
   }
 }

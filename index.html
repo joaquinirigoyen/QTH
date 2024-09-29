@@ -16,7 +16,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <a href="#inicio" class="flex-shrink-0 flex items-center space-x-2">
-            <img src="./src/assets/icons/LOGO-SOLO.svg" alt="icono del logo qth" class="w-12 h-auto">
+            <img src="./src/assets/icons/LOGO-SOLO.svg" alt="icono de qth" class="w-12 h-auto">
             <h1 class="font-bold text-2xl">QTH.SRL</h1>
           </a>          
           <div class="hidden md:flex md:items-center lg:flex lg:items-center space-x-4 font-bold">
@@ -71,67 +71,65 @@
     </section>
 
     <!-- Servicios Section --------------------------------------------------------->
-    <!-- <div class="bg-gradient-to-b from-gray-100  via-gray-200 to-gray-400"> -->
-    <!-- Servicios section data-aos="fade-down" data-aos-duration="1500" -->
-    <section id="servicios" class="py-16 text-slate-800 bg-gray-200" >
+    <section id="servicios" class="py-16 text-slate-800 bg-gray-200">
       <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-4"data-aos="fade-down">Nuestros Servicios</h2>
-        <p class="text-center text-lg mb-4"data-aos="fade-down">Ofrecemos soluciones integrales para garantizar la calidad y durabilidad de tus proyectos.</p>
+        <h1 class="text-3xl text-center font-bold mb-4" data-aos="fade-down" data-aos-duration="500">Servicios Que Ofrecemos</h1>
         <div class="space-y-6">
-        <!-- Categoría Construcción -->
-        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('construccion')" data-aos="flip-up" >
-          <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/construccion.jpg');"></div>
-          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-            <h2 class="text-xl md:text-2xl font-bold text-white">Construcción</h2>
+          <!-- Categoría Construcción -->
+          <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('construccion')" data-aos="flip-up" data-aos-duration="1000">
+            <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/construccion.jpg');"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <h2 class="text-xl md:text-2xl font-bold text-white">Construcción</h2>
+            </div>
           </div>
-        </div>
-        <div id="construccion" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
-      
-        <!-- Categoría Soldadura -->
-        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('soldadura')"data-aos="flip-up">
-          <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/soldadura.jpg');"></div>
-          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-            <h2 class="text-xl md:text-2xl font-bold text-white">Soldadura</h2>
-            
+    
+          <div id="construccion" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    
+          <!-- Categoría Soldadura -->
+          <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('soldadura')" data-aos="flip-up" data-aos-duration="1000">
+            <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/soldadura.jpg');"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <h2 class="text-xl md:text-2xl font-bold text-white">Soldadura</h2>
+            </div>
           </div>
-        </div>
-        <div id="soldadura" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
-      
-        <!-- Categoría Instalaciones -->
-        <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('instalaciones')"data-aos="flip-up">
-          <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/instalaciones2.jpg');"></div>
-          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-            <h2 class="text-xl md:text-2xl font-bold text-white">Instalaciones</h2>
+    
+          <div id="soldadura" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    
+          <!-- Categoría Instalaciones -->
+          <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 overflow-hidden group" onclick="toggleCategory('instalaciones')" data-aos="flip-up" data-aos-duration="1000">
+            <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('/src/assets/img/instalaciones2.jpg');"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <h2 class="text-xl md:text-2xl font-bold text-white">Instalaciones</h2>
+            </div>
           </div>
+    
+          <div id="instalaciones" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
         </div>
-        <div id="instalaciones" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
       </div>
-    </div>
     </section>
     
-    
     <!-- Sección de Proyectos ------------------------------------------------------->
-    <section id="proyectos" class="py-16 bg-slate-800 text-gray-100">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6"data-aos="zoom-in-down" data-aos-duration="700">Nuestros Proyectos</h2>
-        <p class="text-lg mb-2"data-aos="zoom-in-down" data-aos-duration="800">
-          Descubre algunos de los proyectos que hemos llevado a cabo con éxito.
-        </p>
-        <main class="container mx-auto p-4 rounded-lg bg-slate-800 mb-5">
-          <!-- Slider principal de Proyectos -->
-          <div id="proyectos-slider" class="swiper swiper-container proyectos-swiper mb-5" >
-            <div class="swiper-wrapper" id="swiper-wrapper">
-            <!-- Las tarjetas de proyectos se cargarán dinámicamente aquí -->
-            </div>
+    <section id="proyectos" class="py-20 bg-slate-800 text-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4" data-aos="fade-down" data-aos-duration="500">Nuestros Proyectos</h2>
+      <p class="text-lg mb-4" data-aos="fade-down" data-aos-duration="700">
+        Descubre algunos de los proyectos que hemos llevado a cabo con éxito.
+      </p>
 
-            <!-- Paginación y botones de navegación personalizados -->
-            <div class="swiper-pagination proyectos-pagination "></div>
-            <div class="swiper-button-prev proyectos-button-prev"></div>
-            <div class="swiper-button-next proyectos-button-next"></div>
+      <main class="container mx-auto p-4 rounded-lg bg-slate-800 mb-8" data-aos="fade-down" data-aos-duration="1000">
+        <!-- Slider de Proyectos -->
+        <div id="proyectos-slider" class="swiper proyectos-swiper">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Aquí se cargarán dinámicamente las tarjetas de proyectos -->
           </div>
-
-        </main>
-      </div>
+          <!-- Paginación y botones de navegación -->
+          
+          <div class="swiper-button-prev proyectos-button-prev"></div>
+          <div class="swiper-button-next proyectos-button-next"></div>
+          <div class="swiper-pagination proyectos-pagination"></div>
+        </div>
+      </main>
+    </div>
     </section>
 
     <!-- nosotros section ----------------------------------------------------------->
@@ -146,11 +144,10 @@
         <p class=" text-gray-600 mb-4" data-aos="flip-down">
           En <strong>QTH.SRL</strong>, nos dedicamos a desarrollar proyectos de alta envergadura con un enfoque en calidad, innovación y sostenibilidad. Contamos con un equipo de profesionales experimentados que lideran cada obra desde la planificación hasta su ejecución, garantizando resultados que superan las expectativas de nuestros clientes. Nuestro compromiso es construir no solo infraestructuras, sino también relaciones de confianza y éxito duradero.
         </p>
-
         <!-- Contenedor de las cards -->
         <div class="flex flex-wrap justify-center gap-8">
           <!-- Card Misión -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="1000">
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="1500">
             <!-- Icono SVG -->
             <div class="mb-2 text-yellow-500">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12" aria-label="icono mision de la empresa">
@@ -164,7 +161,7 @@
           </div>
 
           <!-- Card Visión -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="1500">
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="2000">
             <!-- Icono SVG -->
             <div class="mb-2 text-yellow-500">
               <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono vision de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
@@ -180,7 +177,7 @@
           </div>
 
           <!-- Card Valores -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="2000">
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="2500">
             <!-- Icono SVG -->
             <div class="mb-2 text-yellow-500">
               <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono valores de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
@@ -198,99 +195,98 @@
       </div>
     </section>
 
-
     <!-- contacto section ----------------------------------------------------------->
-    <section id="contacto" class=" py-16 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-500">
+    <section id="contacto" class="py-16 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-500">
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <!-- Flexbox para dividir en dos columnas -->
         <div class="flex flex-col md:flex-row md:justify-between gap-12">
           <!-- Columna Izquierda: Mapa y Detalles de Contacto -->
-          <div class="w-full md:w-1/2 space-y-4"data-aos="zoom-in-down" data-aos-duration="800">
+          <div class="w-full md:w-1/2 space-y-4">
             <!-- Mapa de Ubicación -->
             <div class="w-full h-48 bg-white shadow rounded-lg overflow-hidden">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3102.4696838402433!2d-68.122178!3d-38.958942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333da0464863%3A0xf8fe5df913bc6cec!2sCaspichango%20326%2C%20Q8300JLC%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1726549071674!5m2!1ses!2sar" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
             <!-- Información de Contacto -->
             <div class="bg-white p-4 rounded-lg shadow space-y-4 flex flex-col font-semibold">
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center space-x-2" data-aos="fade-right" data-aos-duration="1000">
                 <a
-          href="https://www.google.com.ar/maps/search/casipichango+326/@-38.9581816,-68.1208486,19.41z?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
-          target="_blank"
-          aria-label="Ubicación"
-          rel="noopener noreferrer"
-          class="flex items-center space-x-3"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512"
-            class="w-8 h-8"
-          >
-            <path
-              fill="#eec00c"
-              d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
-            />
-          </svg>
-          <p class="text-slate-800">Caspichango 326, Neuquén, Argentina</p>
+                  href="https://www.google.com.ar/maps/search/casipichango+326/@-38.9581816,-68.1208486,19.41z?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  aria-label="Ubicación"
+                  rel="noopener noreferrer"
+                  class="flex items-center space-x-3"
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                    class="w-8 h-8"
+                  >
+                    <path
+                      fill="#eec00c"
+                      d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                    />
+                  </svg>
+                  <p class="text-slate-800">Caspichango 326, Neuquén, Argentina</p>
                 </a>
               </div>
 
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center space-x-2" data-aos="fade-right" data-aos-duration="1500">
                 <a
-              href="https://wa.me/2995519994"
-              target="_blank"
-              aria-label="WhatsApp"
-              rel="noopener noreferrer"
-              class="flex items-center space-x-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-                class="w-8 h-8"
-              >
-                <path
-                  fill="#eec00c"
-                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-                />
-              </svg>
-              <p class="text-slate-800">
-                +54 9 2995 51-9994
-              </p>
+                  href="https://wa.me/2995519994"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                  rel="noopener noreferrer"
+                  class="flex items-center space-x-3"
+                  >
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="w-8 h-8"
+                    >
+                    <path
+                      fill="#eec00c"
+                      d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                    />
+                  </svg>
+                  <p class="text-slate-800">
+                    +54 9 2995 51-9994
+                  </p>
                 </a>
               </div>
 
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center space-x-2" data-aos="fade-right" data-aos-duration="2000">
                 <a
-          href="mailto:qth.admneuquen@gmail.com"
-          target="_blank"
-          aria-label="Correo"
-          class="flex items-center space-x-3"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="w-8 h-8 "
-          >
-            <path
-              fill="#eec00c"
-              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-            />
-          </svg>
-          <p class="text-slate-800 text-sm md:text-base">
-            qth.admneuquen@gmail.com
-          </p>
+                  href="mailto:qth.admneuquen@gmail.com"
+                  target="_blank"
+                  aria-label="Correo"
+                  class="flex items-center space-x-3"
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="w-8 h-8 "
+                    >
+                    <path
+                      fill="#eec00c"
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                    />
+                  </svg>
+                  <p class="text-slate-800 text-sm md:text-base">
+                    qth.admneuquen@gmail.com
+                  </p>
                 </a>
               </div>
            </div>
             <!-- Carga de PDF -->
             <div class="bg-white p-4 rounded-lg shadow">
               <form action="https://formsubmit.co/joa.irigoyen@gmail.com" method="POST" id="empleadosform" class="space-y-4" novalidate></form>
-              <label class="block text-md font-medium text-gray-700 mt-0">Te interesaria trabajar con nostros? Subi tu Currículum (PDF)!</label>
+              <label class="block text-md font-medium text-gray-700 mt-0">¿Te interesaria trabajar con nostros? Subi tu Currículum en PDF</label>
               <input type="file" name="vacante" accept=".pdf" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
               <button type="submit" class="mt-2 w-full font-bold bg-yellow-500 text-slate-800 py-2 px-4 rounded hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300">Subir</button>
             </form>
             </div>
           </div>
           <!-- Columna Derecha: Formulario de Contacto -->
-          <div class="w-full md:w-1/2 bg-white p-4 rounded-lg shadow"data-aos="zoom-in-down" data-aos-duration="800">
+          <div class="w-full md:w-1/2 bg-white p-4 rounded-lg shadow">
             <h1 class="text-2xl font-bold  text-slate-800 mb-2 text-center">Contáctanos</h1>
             <form action="https://formsubmit.co/joa.irigoyen@gmail.com" method="POST" id="contactForm" class="space-y-3" novalidate>
               <div>
@@ -334,8 +330,90 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   </body>
-  <!-- Footer -->
-  <footer class="bg-slate-800 text-center p-4 shadow-md text-white">
-    <p>&copy; 2024 QTH. Todos los derechos reservados.</p>
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+     <!-- Información de contacto -->
+    <div class="col-span-1 ml-2">
+    <h2 class="font-bold mb-4 text-xl">Información</h2>
+  
+    <!-- Dirección -->
+    <div class="flex items-center mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 384 512">
+      <path fill="#f3f4f6" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+    </svg>
+    <a href="https://www.google.com.ar/maps/search/casipichango+326/@-38.9581816,-68.1208486,19.41z?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" 
+       target="_blank" 
+       class="ml-4 hover:underline hover:text-yellow-500">
+      Caspichango 326, Neuquén
+    </a>
+  </div>
+  
+  <!-- Teléfono -->
+  <div class="flex items-center mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 448 512">
+      <path fill="#f3f4f6" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+    <a href="https://wa.me/2995519994" 
+       target="_blank" 
+       class="ml-4 hover:underline hover:text-yellow-500">
+      +54 9 2995 51-9994
+    </a>
+  </div>
+  
+  <!-- Correo electrónico -->
+  <div class="flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 512 512">
+      <path fill="#f3f4f6" d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/>
+    </svg>
+    <a href="mailto:qth.admneuquen@gmail.com" 
+       target="_blank" 
+       class="ml-4 hover:underline hover:text-yellow-500">
+      qth.admneuquen@gmail.com
+    </a>
+  </div>
+</div>
+
+<!-- Redes Sociales -->
+<div class="col-span-1 ml-2">
+  <h2 class="font-bold mb-4 text-xl">Redes Sociales</h2>
+        <!-- Ig-->
+      <div class="flex items-center mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 448 512">
+            <path fill="#f3f4f6" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+          </svg>
+          <a href="#" aria-label="Instagram" class=" ml-4 text-gray-500 hover:text-yellow-500">
+            Instagram
+          </a>
+      </div>
+      
+      <!-- Face-->
+      <div class="flex items-center mb-4">
+        <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-yellow-500"></a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 512 512">
+          <path fill="#f3f4f6" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+        </svg> 
+        <a href="#" aria-label="Facebook" class="ml-4 text-gray-500 hover:text-yellow-500"> Facebook</a>
+      </div>
+</div>
+
+      
+      <!-- Otra sección de la empresa -->
+      <div class="col-span-1 ml-2">
+        <h2 class="font-bold mb-4 text-xl">Rubro Petrolero</h2>
+        <p>QTH también forma parte del rubro petrolero a través de <a href="https://pyp-argentina.com/" target="_blank" class="underline hover:text-yellow-500 ">PYP-Argentina</a>.</p>
+        <a href="https://pyp-argentina.com/"  target="_blank" rel="noopener noreferrer"><img src="./src/assets/img/pyp.png" alt="pyp-argentina"></a>
+      </div>
+    
+    </div>
+    <hr>
+  
+    <!-- Copyright y créditos -->
+    <div class="text-center text-gray-400 mt-8">
+      <h3 class="text-lg">&copy; 2024 QTH.SRL. Todos los derechos reservados.</h3>
+      <p>Desarrollado por <a class="underline" href="https://github.com/joaquinirigoyen" target="_blank">Joaquin Irigoyen</a></p>
+    </div>
   </footer>
+  
+  
 </html>
