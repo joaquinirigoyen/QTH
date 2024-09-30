@@ -3,7 +3,7 @@
     "id": 1,
     "titulo": "Obras humedas",
     "descripcion": "Realizamos obras húmedas con precisión y calidad, abarcando desde cimientos hasta acabados finales, para garantizar estructuras sólidas y duraderas.",
-    "imagen": "/src/assets/img/servicios/albañileria.jpg",
+    "imagen": "src/assets/img/servicios/albañileria.jpg",
     "categoria": "construccion"
   },
   {
