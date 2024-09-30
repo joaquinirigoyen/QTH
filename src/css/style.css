@@ -10,7 +10,23 @@ html {
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
-
+/* --- Boton wpp --- */
+.float-wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+.float-wa:hover {
+  background-color: #eab308;
+}
 /* Botones de categoría (usados en otras partes del sitio) */
 .category-button {
   cursor: pointer;
