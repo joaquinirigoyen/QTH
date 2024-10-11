@@ -15,12 +15,12 @@
     <!-- nav Section ------------------------------------------------------------->
     <nav class="bg-slate-800 text-white fixed top-0 left-0 w-full z-10" data-aos="fade-down" data-aos-duration="1500">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
+        <div class="flex justify-between items-center h-16 2xl:h-20">
           <a href="#inicio" class="flex-shrink-0 flex items-center space-x-2">
-            <img src="src/assets/icons/LOGO-SOLO.svg" alt="icono de qth" class="w-12 h-auto">
-            <h1 class="font-bold text-2xl">QTH.SRL</h1>
+            <img src="src/assets/icons/LOGO-SOLO.svg" alt="icono de qth" class="2xl:w-16 w-12 h-auto">
+            <h1 class="font-bold text-2xl 2xl:text-5xl">QTH.SRL</h1>
           </a>          
-          <div class="hidden md:flex md:items-center lg:flex lg:items-center space-x-4 font-bold">
+          <div class="hidden space-x-4 md:flex md:items-center lg:flex lg:items-center 2xl:text-xl 2xl:flex 2xl:items-center 2xl:space-x-6 font-bold">
             <a href="#inicio" class="navbar-link py-2">Inicio</a>
             <a href="#servicios" class="navbar-link py-2">Servicios</a>
             <a href="#proyectos" class="navbar-link py-2">Proyectos</a>
@@ -30,7 +30,7 @@
           </div>
           <div class="flex md:hidden items-center">
             <button id="menu-button" class="focus:outline-none">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-6 h-6" alt="Logo menu hamburguesa" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
               </svg>
             </button>
@@ -46,82 +46,81 @@
       </div> 
     </nav>
     <!-- boton de wpp ------------------------------------------------------------->
-    <a href="https://wa.me/5492995519994?text=Hola" class="float-wa" target="_blank">
+    <a href="https://wa.me/5492995519994?text=Hola" class="float-wa 2xl:mr-6" target="_blank">
       <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
     </a>
     <!-- incio Section ------------------------------------------------------------->
     <section
-      id="inicio"
-      class="bg-cover bg-center h-screen flex items-center"
-      style="background-image: url('src/assets/img/inicio.jpg')"
-    >
-      <div class="bg-black bg-opacity-60 w-full h-full flex items-center">
-        <div class="ml-16" data-aos="zoom-in-right" data-aos-duration="1500">
-          <h1 class="text-white text-7xl font-bold leading-none">
-            Creamos<br />
-            <span class="block text-7xl">Futuro</span>
-          </h1>
-          <div class="text-white text-xl mt-4 max-w-md text-left">
-            <p>Comprometidos con la excelencia</p>
-            <p>en construccion</p>
+          id="inicio"
+          class="bg-cover bg-center h-screen flex items-center"
+          style="background-image: url('src/assets/img/inicio.jpg')"
+        >
+          <div class="bg-black bg-opacity-60 w-full h-full flex items-center">
+            <div class="ml-16 2xl:ml-64" data-aos="zoom-in-right" data-aos-duration="1500">
+              <h1 class="text-white text-7xl 2xl:text-8xl font-bold leading-none">
+                Creamos<br />
+                <span class="block text-7xl 2xl:text-8xl">Futuro</span>
+              </h1>
+              <div class="text-white text-xl 2xl:text-3xl mt-4 2xl:mt-8 max-w-md text-left">
+                <p>Comprometidos con la excelencia</p>
+                <p>en construcción</p>
+              </div>
+              <a
+                href="#proyectos"
+                class="mt-6 2xl:mt-8 inline-block bg-yellow-500 text-slate-800 font-bold py-2 px-6 2xl:text-lg 2xl:py-4 2xl:px-12 rounded hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300"
+                >Ver Proyectos
+              </a>
+            </div>
           </div>
-          <a
-            href="#proyectos"
-            class="mt-6 inline-block bg-yellow-500 text-slate-800 font-bold py-2 px-6 rounded hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300"
-            >Ver Proyectos
-          </a>
+    </section>
+
+    <!-- Servicios Section ---------------------------------------------------------> 
+    <section id="servicios" class="py-16 2xl:py-32 text-slate-800 bg-gray-200">
+      <div class="container mx-auto text-center">
+        <h1 class="text-3xl 2xl:text-5xl text-center font-bold mb-4 2xl:mb-6" data-aos="fade-down" data-aos-duration="500">Servicios Que Ofrecemos</h1>
+        <div class="space-y-6 2xl:space-y-8">
+          <!-- Categoría Construcción -->
+          <div class="relative h-36 md:h-36 2xl:h-52 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 2xl:w-8/12 overflow-hidden group" onclick="toggleCategory('construccion')" data-aos="flip-up" data-aos-duration="1000">
+            <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('src/assets/img/construccion.jpg');"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <h2 class="text-xl md:text-2xl 2xl:text-3xl font-bold text-white">Construcción</h2>
+            </div>
+          </div>
+      
+          <div id="construccion" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+      
+          <!-- Categoría Soldadura -->
+          <div class="relative h-36 md:h-36 2xl:h-52  rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 2xl:w-8/12 overflow-hidden group" onclick="toggleCategory('soldadura')" data-aos="flip-up" data-aos-duration="1000">
+            <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('src/assets/img/soldadura.jpg');"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <h2 class="text-xl md:text-2xl 2xl:text-3xl  font-bold text-white">Soldadura</h2>
+            </div>
+          </div>
+      
+          <div id="soldadura" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+      
+          <!-- Categoría Instalaciones -->
+          <div class="relative h-36 md:h-36 2xl:h-52 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 2xl:w-8/12 overflow-hidden group" onclick="toggleCategory('instalaciones')" data-aos="flip-up" data-aos-duration="1000">
+            <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('src/assets/img/instalaciones2.jpg');"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <h2 class="text-xl md:text-2xl 2xl:text-3xl  font-bold text-white">Instalaciones</h2>
+            </div>
+          </div>
+      
+          <div id="instalaciones" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
         </div>
       </div>
     </section>
 
-   <!-- Servicios Section ---------------------------------------------------------> 
-<section id="servicios" class="py-16 text-slate-800 bg-gray-200 lg:py-24">
-  <div class="container mx-auto text-center">
-    <h1 class="text-3xl text-center font-bold mb-4" data-aos="fade-down" data-aos-duration="500">ServiCIOos Que Ofrecemos</h1>
-    <div class="space-y-6">
-      <!-- Categoría Construcción -->
-      <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 xl:w-6/12 overflow-hidden group" onclick="toggleCategory('construccion')" data-aos="flip-up" data-aos-duration="1000">
-        <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('src/assets/img/construccion.jpg');"></div>
-        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <h2 class="text-xl md:text-2xl font-bold text-white">Construcción</h2>
-        </div>
-      </div>
-  
-      <div id="construccion" class="hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
-  
-      <!-- Categoría Soldadura -->
-      <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 xl:w-6/12 overflow-hidden group" onclick="toggleCategory('soldadura')" data-aos="flip-up" data-aos-duration="1000">
-        <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('src/assets/img/soldadura.jpg');"></div>
-        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <h2 class="text-xl md:text-2xl font-bold text-white">Soldadura</h2>
-        </div>
-      </div>
-  
-      <div id="soldadura" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
-  
-      <!-- Categoría Instalaciones -->
-      <div class="relative h-36 md:h-36 rounded-xl cursor-pointer mx-auto w-10/12 lg:w-8/12 xl:w-6/12 overflow-hidden group" onclick="toggleCategory('instalaciones')" data-aos="flip-up" data-aos-duration="1000">
-        <div class="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-110" style="background-image: url('src/assets/img/instalaciones2.jpg');"></div>
-        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <h2 class="text-xl md:text-2xl font-bold text-white">Instalaciones</h2>
-        </div>
-      </div>
-  
-      <div id="instalaciones" class="hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
-    </div>
-  </div>
-</section>
-
-    
     <!-- Sección de Proyectos ------------------------------------------------------->
-    <section id="proyectos" class="py-20 bg-slate-800 text-gray-100">
+    <section id="proyectos" class="py-20 2xl:py-40 bg-slate-800 text-gray-100">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4" data-aos="fade-down" data-aos-duration="500">Nuestros Proyectos</h2>
-      <p class="text-lg mb-4" data-aos="fade-down" data-aos-duration="700">
+      <h2 class="text-4xl font-bold mb-4 2xl:text-6xl 2xl:mb-6" data-aos="fade-down" data-aos-duration="500">Nuestros Proyectos</h2>
+      <p class="text-lg mb-4 2xl:text-2xl 2xl:mb-6" data-aos="fade-down" data-aos-duration="700">
         Descubre algunos de los proyectos que hemos llevado a cabo con éxito.
       </p>
 
-      <main class="container mx-auto p-4 rounded-lg bg-slate-800 mb-8" data-aos="fade-down" data-aos-duration="1000">
+      <main class="container mx-auto p-4 rounded-lg bg-slate-800 mb-8 2xl:p-8 2xl:mb-16" data-aos="fade-down" data-aos-duration="1000">
         <!-- Slider de Proyectos -->
         <div id="proyectos-slider" class="swiper proyectos-swiper">
           <div class="swiper-wrapper" id="swiper-wrapper">
@@ -138,61 +137,61 @@
     </section>
 
     <!-- nosotros section ----------------------------------------------------------->
-    <section id="nosotros" class="py-16 bg-gray-200 min-h-screen">
+    <section id="nosotros" class="py-16 2xl:py-32 bg-gray-200 min-h-screen">
       <!-- Contenido -->
-      <div class="container mx-auto text-center p-2">
+      <div class="container mx-auto text-center p-2 2xl:p-4">
         <!-- Título -->
-        <h2 class="text-4xl font-extrabold text-slate-800 mb-4" data-aos="flip-down">
+        <h2 class="text-4xl font-extrabold text-slate-800 mb-4 2xl:text-6xl 2xl:mb-8" data-aos="flip-down">
           ¿Quiénes somos?
         </h2>
         <!-- Descripción breve -->
-        <p class=" text-gray-600 mb-4" data-aos="flip-down">
+        <p class=" text-gray-600 mb-4 2xl:text-2xl 2xl:mb-8" data-aos="flip-down">
           En <strong>QTH.SRL</strong>, nos dedicamos a desarrollar proyectos de alta envergadura con un enfoque en calidad, innovación y sostenibilidad. Contamos con un equipo de profesionales experimentados que lideran cada obra desde la planificación hasta su ejecución, garantizando resultados que superan las expectativas de nuestros clientes. Nuestro compromiso es construir no solo infraestructuras, sino también relaciones de confianza y éxito duradero.
         </p>
         <!-- Contenedor de las cards -->
-        <div class="flex flex-wrap justify-center gap-8">
+        <div class="flex flex-wrap justify-center gap-8 2xl:gap-16">
           <!-- Card Misión -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="1500">
+          <div class="max-w-sm m-2 flex flex-col items-center text-center bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 2xl:w-80 2xl:p-8 2xl:shadow-xl " data-aos="flip-left" data-aos-duration="1500">
             <!-- Icono SVG -->
             <div class="mb-2 text-yellow-500">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12" aria-label="icono mision de la empresa">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 2xl:w-16 2xl:h-16" aria-label="icono mision de la empresa">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
               </svg>
             </div>
             <!-- Contenido de la tarjeta -->
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Nuestra Misión</h3>
-            <p class="text-gray-600 mb-2 leading-relaxed">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 2xl:text-2xl 2xl:mb-4">Nuestra Misión</h3>
+            <p class="text-gray-600 mb-2 leading-relaxed 2xl:text-xl 2xl:mb-4">
               Ofrecemos soluciones innovadoras y de alta calidad en la construcción, superando las expectativas de nuestros clientes con excelencia y compromiso en cada proyecto.    </p>
           </div>
 
           <!-- Card Visión -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="2000">
+          <div class="max-w-sm m-2 flex flex-col items-center text-center bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 2xl:w-80 2xl:p-8 2xl:shadow-xl" data-aos="flip-left" data-aos-duration="2000">
             <!-- Icono SVG -->
             <div class="mb-2 text-yellow-500">
-              <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono vision de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono vision de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 2xl:w-16 2xl:h-16">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
               </svg>
             </div>
             <!-- Contenido de la tarjeta -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Nuestra Visión</h3>
-              <p class="text-gray-600 mb-2 leading-relaxed">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 2xl:text-2xl 2xl:mb-4">Nuestra Visión</h3>
+              <p class="text-gray-600 mb-2 leading-relaxed 2xl:text-xl 2xl:mb-4">
                 Ser referentes en la construcción, reconocidos por nuestra capacidad de innovar y la calidad en la ejecución, con un enfoque en la sostenibilidad y la satisfacción del cliente.</p>
             </div>
           </div>
 
           <!-- Card Valores -->
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 xl:w-72 max-w-sm m-2 flex flex-col items-center text-center" data-aos="flip-left" data-aos-duration="2500">
+          <div class="max-w-sm m-2 flex flex-col items-center text-center bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-gray-400 p-4 w-full sm:w-2/3 md:w-1/2 lg:w-72 2xl:w-80 2xl:p-8 2xl:shadow-xl" data-aos="flip-left" data-aos-duration="2500">
             <!-- Icono SVG -->
             <div class="mb-2 text-yellow-500">
-              <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono valores de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="icono valores de la empresa" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 2xl:w-16 2xl:h-16">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
               </svg>
             </div>
             <!-- Contenido de la tarjeta -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Nuestros Valores</h3>
-              <p class="text-gray-600 mb-2 leading-relaxed">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 2xl:text-2xl 2xl:mb-4 ">Nuestros Valores</h3>
+              <p class="text-gray-600 mb-2 leading-relaxed 2xl:text-xl 2xl:mb-4">
                 Nuestros pilares son el compromiso, la integridad, la innovación y la excelencia, impulsándonos a ofrecer lo mejor en cada proyecto.</p>
             </div>
           </div>
@@ -201,126 +200,134 @@
     </section>
 
     <!-- contacto section ----------------------------------------------------------->
-    <section id="contacto" class="py-16 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-500">
-      <div class="w-full px-4 sm:px-6 lg:px-8">
+    <section id="contacto" class="py-16 2xl:py-28 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-500">
+      <div class="w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
         <!-- Flexbox para dividir en dos columnas -->
-        <div class="flex flex-col md:flex-row md:justify-between gap-12">
+        <div class="flex flex-col md:flex-row md:justify-between gap-12 2xl:gap-24">
           <!-- Columna Izquierda: Mapa y Detalles de Contacto -->
-          <div class="w-full md:w-1/2 space-y-4">
+          <div class="w-full md:w-1/2 space-y-4 2xl:space-y-8">
             <!-- Mapa de Ubicación -->
-            <div class="w-full h-48 bg-white shadow rounded-lg overflow-hidden">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3102.4696838402433!2d-68.122178!3d-38.958942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333da0464863%3A0xf8fe5df913bc6cec!2sCaspichango%20326%2C%20Q8300JLC%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1726549071674!5m2!1ses!2sar" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+            <div class="w-full h-48 bg-white shadow rounded-lg overflow-hidden 2xl:h-60">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3102.4696838402433!2d-68.122178!3d-38.958942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333da0464863%3A0xf8fe5df913bc6cec!2sCaspichango%20326%2C%20Q8300JLC%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1726549071674!5m2!1ses!2sar" 
+                class="w-full h-full"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe> 
+            </div>
             <!-- Información de Contacto -->
-            <div class="bg-white p-4 rounded-lg shadow space-y-4 flex flex-col font-semibold">
-              <div class="flex items-center space-x-2" data-aos="fade-right" data-aos-duration="1000">
+            <div class="bg-white p-4 rounded-lg shadow space-y-4 flex flex-col font-semibold 2xl:p-8 2xl:space-y-8">
+              <div class="flex items-center space-x-2 2xl:space-x-4" data-aos="fade-right" data-aos-duration="1000">
                 <a
                   href="https://www.google.com.ar/maps/search/casipichango+326/@-38.9581816,-68.1208486,19.41z?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   aria-label="Ubicación"
                   rel="noopener noreferrer"
-                  class="flex items-center space-x-3"
+                  class="flex items-center space-x-3 2xl:space-x-6"
                   >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512"
-                    class="w-8 h-8"
+                    class="w-8 h-8 2xl:w-10 2xl:h-10"
                   >
                     <path
                       fill="#eec00c"
                       d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
                     />
                   </svg>
-                  <p class="text-slate-800">Caspichango 326, Neuquén, Argentina</p>
+                  <p class="text-slate-800 text-sm md:text-base 2xl:text-lg">Caspichango 326, Neuquén, Argentina</p>
                 </a>
               </div>
 
-              <div class="flex items-center space-x-2" data-aos="fade-right" data-aos-duration="1500">
+              <div class="flex items-center space-x-2 2xl:space-x-4" data-aos="fade-right" data-aos-duration="1500">
                 <a
                   href="https://wa.me/2995519994"
                   target="_blank"
                   aria-label="WhatsApp"
                   rel="noopener noreferrer"
-                  class="flex items-center space-x-3"
+                  class="flex items-center space-x-3 2xl:space-x-6"
                   >
                   <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      class="w-8 h-8"
+                      class="w-8 h-8  2xl:w-10 2xl:h-10"
                     >
                     <path
                       fill="#eec00c"
                       d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
                     />
                   </svg>
-                  <p class="text-slate-800">
+                  <p class="text-slate-800 text-sm md:text-base 2xl:text-lg">
                     +54 9 2995 51-9994
                   </p>
                 </a>
               </div>
 
-              <div class="flex items-center space-x-2" data-aos="fade-right" data-aos-duration="2000">
+              <div class="flex items-center space-x-2 2xl:space-x-4" data-aos="fade-right" data-aos-duration="2000">
                 <a
                   href="mailto:qth.admneuquen@gmail.com"
                   target="_blank"
                   aria-label="Correo"
-                  class="flex items-center space-x-3"
+                  class="flex items-center space-x-3 2xl:space-x-6"
                   >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
-                    class="w-8 h-8 "
+                    class="w-8 h-8  2xl:w-10 2xl:h-10"
                     >
                     <path
                       fill="#eec00c"
                       d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
                     />
                   </svg>
-                  <p class="text-slate-800 text-sm md:text-base">
+                  <p class="text-slate-800 text-sm md:text-base 2xl:text-lg">
                     qth.admneuquen@gmail.com
                   </p>
                 </a>
               </div>
            </div>
             <!-- Carga de PDF -->
-            <div class="bg-white p-4 rounded-lg shadow">
-              <form action="https://formsubmit.co/joa.irigoyen@gmail.com" method="POST" id="empleadosform" class="space-y-4" novalidate></form>
-              <label class="block text-md font-medium text-gray-700 mt-0">¿Te interesaria trabajar con nostros? Subi tu Currículum en PDF</label>
-              <input type="file" name="vacante" accept=".pdf" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
-              <button type="submit" class="mt-2 w-full font-bold bg-yellow-500 text-slate-800 py-2 px-4 rounded hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300">Subir</button>
+            <div class="bg-white p-4 rounded-lg shadow 2xl:p-8">
+              <form action="https://formsubmit.co/joa.irigoyen@gmail.com" method="POST" id="empleadosform" class="space-y-4 2xl:space-y-8" novalidate></form>
+              <label class="block text-md font-medium text-gray-700 mt-0 2xl:text-xl 2xl:mt-1">¿Te interesaria trabajar con nostros? Subi tu Currículum en PDF</label>
+              <input type="file" name="vacante" accept=".pdf" class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm 2xl:mt4 2xl:py-4 2xl:px-8 2xl:text-lg">
+              <button type="submit" class="mt-2 w-full font-bold bg-yellow-500 text-slate-800 py-2 px-4 rounded-md hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300 2xl:mt4 2xl:py-4 2xl:px-8 2xl:text-xl">Subir</button>
             </form>
             </div>
           </div>
           <!-- Columna Derecha: Formulario de Contacto -->
-          <div class="w-full md:w-1/2 bg-white p-4 rounded-lg shadow">
-            <h1 class="text-2xl font-bold  text-slate-800 mb-2 text-center">Contáctanos</h1>
-            <form action="https://formsubmit.co/joa.irigoyen@gmail.com" method="POST" id="contactForm" class="space-y-3" novalidate>
+          <div class="w-full md:w-1/2 bg-white p-4 rounded-lg shadow 2xl:p-8">
+            <h1 class="text-2xl font-bold  text-slate-800 mb-2 text-center 2xl:text-4xl 2xl:mb-4">Contáctanos</h1>
+            <form action="https://formsubmit.co/joa.irigoyen@gmail.com" method="POST" id="contactForm" class="space-y-3 2xl:space-y-6" novalidate>
               <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
-                <input type="text" name="nombre" id="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm" required>
+                <label for="name" class="block text-sm font-medium text-gray-700 2xl:text-lg">Nombre Completo</label>
+                <input type="text" name="nombre" id="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm 2xl:mt2 2xl:px-8 2xl:py-4" required>
                 <span id="nameError" class="text-red-500 text-sm"></span>
               </div>
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-                <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm" required>
+                <label for="email" class="block text-sm font-medium text-gray-700 2xl:text-lg">Correo Electrónico</label>
+                <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm 2xl:mt2 2xl:px-8 2xl:py-4" required>
                 <span id="emailError" class="text-red-500 text-sm "></span>
               </div>
               <div>
-                <label for="phone" class="block text-sm font-medium text-gray-700">Teléfono</label>
-                <input type="text" name="phone" id="phone" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm" required>
+                <label for="phone" class="block text-sm font-medium text-gray-700 2xl:text-lg">Teléfono</label>
+                <input type="text" name="phone" id="phone" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm 2xl:mt2 2xl:px-8 2xl:py-4" required>
                 <span id="phoneError" class="text-red-500 text-sm"></span>
               </div>
               <div>
-                <label for="subject" class="block text-sm font-medium text-gray-700">Asunto</label>
-                <input type="text" name="asunto" id="subject" class="mt-1  block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm" required>
+                <label for="subject" class="block text-sm font-medium text-gray-700 2xl:text-lg">Asunto</label>
+                <input type="text" name="asunto" id="subject" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm 2xl:mt2 2xl:px-8 2xl:py-4" required>
                 <span id="subjectError" class="text-red-500 text-sm"></span>
               </div>
               <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 mb-0 ">Mensaje</label>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-0 2xl:text-lg 2xl:mb-1">Mensaje</label>
                 <textarea name="mensaje" id="message" rows="4" class="mt-0.5
-                 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm" required></textarea>
+                 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm 2xl:mt-1.5 2xl:px-8 2xl:py-4" required></textarea>
                 <span id="messageError" class="text-red-500 text-sm"></span>
               </div>
-              <button type="submit" class="w-full font-bold bg-yellow-500 text-slate-800 py-2 px-4 rounded hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300">Enviar</button>
+              <button type="submit" class="w-full font-bold bg-yellow-500 text-slate-800 py-2 px-4 rounded-md hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300 2xl:px-8 2xl:py-4 2xl:text-xl">Enviar</button>
             </form>
           </div>
         </div>
@@ -335,14 +342,13 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   </body>
-  <footer class="bg-gray-900 text-white py-8">
+  <footer class="bg-slate-800 text-white py-8">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      
       <!-- Información de contacto -->
       <div class="col-span-1 ml-2">
         <h2 class="font-bold mb-4 text-xl">Información</h2>
         <!-- Dirección -->
-        <div class="flex items-center mb-4 text-gray-400">
+        <div class="flex items-center mb-4 text-gray-100">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 384 512">
             <path fill="#f3f4f6" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
           </svg>
@@ -355,7 +361,7 @@
         </div>
     
         <!-- Teléfono -->
-        <div class="flex items-center mb-4 text-gray-400">
+        <div class="flex items-center mb-4 text-gray-100">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 448 512">
             <path fill="#f3f4f6" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
           </svg>
@@ -368,7 +374,7 @@
         </div>
     
         <!-- Correo electrónico -->
-        <div class="flex items-center mb-4 text-gray-400">
+        <div class="flex items-center mb-4 text-gray-100">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 512 512">
             <path fill="#f3f4f6" d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/>
           </svg>
@@ -390,35 +396,35 @@
         <path fill="#f3f4f6" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
       </svg>
       <a 
-        href="https://www.instagram.com/" aria-label="Instagram" target="_blank" class=" ml-4 text-gray-500 hover:text-yellow-500">
+        href="https://www.instagram.com/" aria-label="Instagram" target="_blank" class=" ml-4 text-gray-100 hover:text-yellow-500">
         Instagram
       </a>
     </div>
   
     <!-- Face-->
     <div class="flex items-center mb-4">
-      <a href="#" aria-label="Facebook" class="text-gray-500 hover:text-yellow-500"></a>
+      <a href="#" aria-label="Facebook" class="text-gray-100 hover:text-yellow-500"></a>
       <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 512 512">
         <path fill="#f3f4f6" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
       </svg> 
-      <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" class="ml-4 text-gray-500 hover:text-yellow-500"> Facebook</a>
+      <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" class="ml-4 text-gray-100 hover:text-yellow-500"> Facebook</a>
     </div>
   </div>
       
   <!-- Otra sección de la empresa -->
   <div class="col-span-1 ml-2">
     <h2 class="font-bold mb-4 text-xl">Rubro Petrolero</h2>
-    <p class="text-gray-400">QTH también forma parte del rubro petrolero a través de <a href="https://pyp-argentina.com/" target="_blank" class="underline hover:text-yellow-500 ">PYP-Argentina</a>.</p>
+    <p class="text-gray-100">QTH también forma parte del rubro petrolero a través de <a href="https://pyp-argentina.com/" target="_blank" class="underline hover:text-yellow-500 ">PYP-Argentina</a>.</p>
     <a href="https://pyp-argentina.com/"  target="_blank" rel="noopener noreferrer"><img src="src/assets/img/pyp.png" alt="pyp-argentina"></a>
   </div>
   
 </div>
 <hr class="opacity-5">
   <!-- Copyright y créditos -->
-  <div class="text-center text-gray-400 mt-8">
+  <div class="text-center text-gray-100 mt-8">
     <h3 class="text-xl">&copy; 2024 QTH.SRL. Todos los derechos reservados.</h3>
     <p class="text-sm">Desarrollado por <a class="hover:underline hover:text-yellow-500" href="https://github.com/joaquinirigoyen" target="_blank">Joaquin Irigoyen</a></p>
   </div>
 
-  </footer> 
+</footer> 
 </html>

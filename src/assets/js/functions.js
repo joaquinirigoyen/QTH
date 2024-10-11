@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.5, // Ajusta este valor según la visibilidad deseada para activar la sección
+      threshold: 0.8, // Ajusta este valor según la visibilidad deseada para activar la sección
     }
   );
 
@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
         categoriaContainer.innerHTML = serviciosFiltrados
           .map(
             (servicio) => `
-            <div  class="bg-slate-800 rounded-lg p-4 text-center flex flex-col items-center shadow-lg transition transform duration-300 hover:scale-105 mx-auto w-10/12" >
-              <img src="${servicio.imagen}" alt="${servicio.titulo}" class="w-24 h-24 object-cover rounded-full mb-2">
-              <h3 class="text-white font-bold text-xl mb-2 ">${servicio.titulo}</h3>
-              <p class="text-white text-sm leading-relaxed">${servicio.descripcion}</p>
+            <div  class="bg-slate-800 rounded-lg p-4 2xl:p-8 text-center flex flex-col items-center shadow-lg transition transform duration-300 hover:scale-105 mx-auto w-10/12" >
+              <img src="${servicio.imagen}" alt="${servicio.titulo}" class="w-24 h-24 2xl:h-32 2xl:w-32 object-cover rounded-full mb-2 2xl:mb-4">
+              <h3 class="text-white font-bold text-xl 2xl:text-2xl mb-2 ">${servicio.titulo}</h3>
+              <p class="text-white 2xl:text-lg text-sm leading-relaxed">${servicio.descripcion}</p>
             </div>
             `
           )
@@ -123,18 +123,18 @@ document.addEventListener("DOMContentLoaded", function () {
         const projectSlide = `
         <div class="swiper-slide flex justify-center mt-4">
           <div class="shadow-lg project-card bg-gradient-to-b from-white via-gray-200 to-gray-300 text-slate-800 rounded-lg p-6 w-full max-w-4xl mx-auto flex md:flex-row items-center md:space-x-6">
-            <div class="w-full h-64 md:h-auto md:w-1/2">
+            <div class="w-full h-64 md:h-auto md:w-1/2 2xl:h-72">
               <img src="${project.imagen}" alt="${project.titulo}" class="w-full h-full object-cover rounded-lg">
             </div>
             <div class="w-full md:w-1/2 flex flex-col justify-between">
               <div>
-                <h3 class="text-2xl md:text-3xl font-bold mb-4">${project.titulo}</h3>
-                <p class="text-sm md:text-lg mb-2">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4 2xl:text-4xl 2xl:mb-8">${project.titulo}</h3>
+                <p class="text-sm md:text-lg mb-2 2xl:text-xl 2xl:mb-6">
                   ${project.descripcion}
                 </p>
               </div>
               <div>
-                <a href="../../pages/projects-details.html?id=${project.id}" class="inline-block bg-yellow-500 text-slate-800 font-bold py-2 px-4 md:py-3 md:px-6 rounded hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300">Ver Detalles</a>
+                <a href="../../pages/projects-details.html?id=${project.id}" class="inline-block bg-yellow-500 text-slate-800 font-bold py-2 px-4 md:py-3 md:px-6 rounded 2xl:px-8 2xl:py-4 2xl:text-lg hover:bg-slate-800 hover:text-yellow-500 transition-colors duration-300">Ver Detalles</a>
               </div>
             </div>
           </div>
