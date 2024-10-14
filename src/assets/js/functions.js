@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Menú móvil
   const menuButton = document.getElementById("menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
   const menuLinks = mobileMenu.querySelectorAll("a");
@@ -8,16 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenu.classList.toggle("hidden");
     });
 
-    // Agregar la funcionalidad para cerrar el menú cuando se selecciona una sección
+    // Cerrar el menú cuando se selecciona una sección
     menuLinks.forEach(function (link) {
       link.addEventListener("click", function () {
         mobileMenu.classList.add("hidden");
       });
     });
   }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // Observador de intersección para las secciones
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".navbar-link");
 
@@ -32,54 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.8, // Ajusta este valor según la visibilidad deseada para activar la sección
+      threshold: 0.8,
     }
   );
 
   sections.forEach((section) => {
     observer.observe(section);
   });
-});
 
-//SECCION DE SERVICIOS
-function toggleCategory(categoria) {
-  const categoryDiv = document.getElementById(categoria);
-
-  // Primero, ocultar todas las demás categorías
-  const categorias = ["construccion", "soldadura", "instalaciones"];
-  categorias.forEach((c) => {
-    const div = document.getElementById(c);
-    if (c !== categoria && !div.classList.contains("hidden")) {
-      div.classList.remove("grid");
-      div.classList.add("hidden");
-    }
-  });
-
-  if (categoryDiv.classList.contains("hidden")) {
-    categoryDiv.classList.remove("hidden");
-    categoryDiv.classList.add("grid");
-
-    // Obtener todas las tarjetas de la categoría
-    const cards = categoryDiv.children;
-
-    // Aplicar un retraso en la visualización de cada tarjeta
-    Array.from(cards).forEach((card, index) => {
-      card.classList.remove("opacity-100"); // Asegurarse de que estén ocultas al inicio
-      card.classList.add("opacity-0"); // Inicialmente ocultas
-
-      // Aplicar el efecto de fade-in con un retraso
-      setTimeout(() => {
-        card.classList.remove("opacity-0"); // Remover opacidad
-        card.classList.add("opacity-100"); // Agregar opacidad total
-      }, index * 300); // 200ms de retraso por tarjeta
-    });
-  } else {
-    categoryDiv.classList.remove("grid");
-    categoryDiv.classList.add("hidden");
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
+  // Cargar servicios
   fetch("../../mocks/servicios.json")
     .then((response) => response.json())
     .then((data) => {
@@ -88,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
       categorias.forEach((categoria) => {
         const categoriaContainer = document.getElementById(categoria);
 
-        // Generar tarjetas de servicios para cada categoría
         const serviciosFiltrados = data.filter(
           (servicio) => servicio.categoria === categoria
         );
@@ -96,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
         categoriaContainer.innerHTML = serviciosFiltrados
           .map(
             (servicio) => `
-            <div  class="bg-slate-800 rounded-lg p-4 2xl:p-8 text-center flex flex-col items-center shadow-lg transition transform duration-300 hover:scale-105 mx-auto w-10/12" >
+            <div class="bg-slate-800 rounded-lg p-4 2xl:p-8 text-center flex flex-col items-center shadow-lg transition transform duration-300 hover:scale-105 mx-auto w-10/12">
               <img src="${servicio.imagen}" alt="${servicio.titulo}" class="w-24 h-24 2xl:h-32 2xl:w-32 object-cover rounded-full mb-2 2xl:mb-4">
-              <h3 class="text-white font-bold text-xl 2xl:text-2xl mb-2 ">${servicio.titulo}</h3>
+              <h3 class="text-white font-bold text-xl 2xl:text-2xl mb-2">${servicio.titulo}</h3>
               <p class="text-white 2xl:text-lg text-sm leading-relaxed">${servicio.descripcion}</p>
             </div>
             `
@@ -107,18 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch((error) => console.error("Error cargando los servicios:", error));
-});
 
-// SECCION PROYECTOS
-document.addEventListener("DOMContentLoaded", function () {
-  // Cargar datos desde el archivo JSON
+  // Cargar proyectos
   fetch("../../mocks/projects.json")
     .then((response) => response.json())
     .then((data) => {
-      // Seleccionar el contenedor del swiper-wrapper
       const swiperWrapper = document.getElementById("swiper-wrapper");
 
-      // Crear las tarjetas de proyectos dinámicamente
       data.forEach((project) => {
         const projectSlide = `
         <div class="swiper-slide flex justify-center mt-4">
@@ -141,46 +96,42 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       `;
 
-        // Añadir cada slide al contenedor del swiper
         swiperWrapper.innerHTML += projectSlide;
       });
 
-      // Inicializar Swiper.js después de cargar las diapositivas
       initSwiper();
     })
     .catch((error) => console.error("Error al cargar los proyectos:", error));
-});
 
-function initSwiper() {
-  const swiper = new Swiper(".proyectos-swiper", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".proyectos-button-next",
-      prevEl: ".proyectos-button-prev",
-    },
-    pagination: {
-      el: ".proyectos-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      // Esto asegura que siempre veas uno
-      640: {
-        slidesPerView: 1,
+  // Inicializar Swiper.js
+  function initSwiper() {
+    const swiper = new Swiper(".proyectos-swiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".proyectos-button-next",
+        prevEl: ".proyectos-button-prev",
       },
-      768: {
-        slidesPerView: 1,
+      pagination: {
+        el: ".proyectos-pagination",
+        clickable: true,
       },
-      1024: {
-        slidesPerView: 1,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 1,
+        },
       },
-    },
-  });
-}
+    });
+  }
 
-//FUNCIONES PARA VALIDAR FORMULARIO
-document.addEventListener("DOMContentLoaded", function () {
+  // Validación del formulario
   const form = document.getElementById("contactForm");
   const nameInput = document.getElementById("name");
   const emailInput = document.getElementById("email");
@@ -195,14 +146,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const messageError = document.getElementById("messageError");
 
   form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Evitar envío automático
+    event.preventDefault();
 
     let isValid = true;
 
-    // Limpiar mensajes previos
     clearMessages();
 
-    // Validaciones
     if (!validateName(nameInput)) isValid = false;
     if (!validateEmail(emailInput)) isValid = false;
     if (!validatePhone(phoneInput)) isValid = false;
@@ -214,19 +163,14 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
 
     if (isValid) {
-      // Mostrar alerta de éxito
       alert("Formulario enviado correctamente!");
-
-      // Limpiar el formulario
       form.reset();
-
-      // Enviar el formulario
       form.submit();
     }
   });
 
   function validateName(input) {
-    const namePattern = /^[a-zA-Z\s]+$/; // Solo letras y espacios
+    const namePattern = /^[a-zA-Z\s]+$/;
     if (input.value.trim() === "") {
       showError(input, nameError, "El nombre es obligatorio.");
       return false;
@@ -258,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function validatePhone(input) {
-    const phonePattern = /^[0-9]+$/; // Solo números
+    const phonePattern = /^[0-9]+$/;
     if (input.value.trim() === "") {
       showError(input, phoneError, "El teléfono es obligatorio.");
       return false;
@@ -301,3 +245,37 @@ document.addEventListener("DOMContentLoaded", function () {
     messageError.textContent = "";
   }
 });
+
+// Función para alternar categorías
+function toggleCategory(categoria) {
+  const categoryDiv = document.getElementById(categoria);
+  const categorias = ["construccion", "soldadura", "instalaciones"];
+
+  categorias.forEach((c) => {
+    const div = document.getElementById(c);
+    if (c !== categoria && !div.classList.contains("hidden")) {
+      div.classList.remove("grid");
+      div.classList.add("hidden");
+    }
+  });
+
+  if (categoryDiv.classList.contains("hidden")) {
+    categoryDiv.classList.remove("hidden");
+    categoryDiv.classList.add("grid");
+
+    const cards = categoryDiv.children;
+
+    Array.from(cards).forEach((card, index) => {
+      card.classList.remove("opacity-100");
+      card.classList.add("opacity-0");
+
+      setTimeout(() => {
+        card.classList.remove("opacity-0");
+        card.classList.add("opacity-100");
+      }, index * 300);
+    });
+  } else {
+    categoryDiv.classList.remove("grid");
+    categoryDiv.classList.add("hidden");
+  }
+}
